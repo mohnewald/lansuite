@@ -110,6 +110,7 @@ switch ($_GET["step"]) {
         $dsp->AddTextFieldRow("user", t('Benutzername'), $_POST["user"], "");
         $dsp->AddPasswordRow("pass", t('Kennwort'), $_POST["pass"], "");
         $dsp->AddTextFieldRow("database", t('Datenbank'), $_POST["database"], "");
+        $dsp->AddTextFieldRow("dbport", t('Datenbank Port'), $_POST["dbport"], "");
         $dsp->AddTextFieldRow("prefix", t('Tabellen-Prefix'), $_POST["prefix"], "");
 
         // Default Designs
@@ -157,6 +158,7 @@ switch ($_GET["step"]) {
         $config["database"]["user"] = $_POST["user"];
         $config["database"]["passwd"] = $_POST["pass"];
         $config["database"]["database"] = $_POST["database"];
+        $config["database"]["dbport"] = $_POST["dbport"];
         $config["database"]["prefix"] = $_POST["prefix"];
         $config["lansuite"]["default_design"] = $_POST["design"];
 
